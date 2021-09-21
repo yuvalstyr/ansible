@@ -1,0 +1,14 @@
+- name: Clone Oh My ZSH auto completion
+  git:
+    repo: https://github.com/zsh-users/zsh-autosuggestions.git
+    dest: "/{{ oh_my_zsh_install_path }}/plugins/zsh-autosuggestions"
+    update: true
+    accept_hostkey: true
+    version: "master"
+- name: Clone Oh My zsh-syntax-highlighting
+  git:
+    repo: https://github.com/zsh-users/zsh-syntax-highlighting.git
+    dest: "/{{ oh_my_zsh_install_path }}/plugins/zsh-syntax-highlighting"
+    update: true
+    accept_hostkey: true
+    version: "master"
